@@ -1,3 +1,4 @@
+
 Background:
 In machine learning, sometimes we should tag the pictures with some labels and let the computers study the pictures on their own to build an association between features of the pictures and the labels. However, the labels are always squeezed together in a few cols.
 In tagging the labels, we want to create an excel table with the columns stands for different symbols and rows for different patients. (attention:different cols, different symbols!) When the value = 1, it means the patient did get that symbol and value = 0 means he didn’t.
