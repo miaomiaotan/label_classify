@@ -1,0 +1,18 @@
+Background:
+In machine learning, sometimes we should tag the pictures with some labels and let the computers study the pictures on their own to build an association between features of the pictures and the labels. However, the labels are always squeezed together in a few cols.
+In tagging the labels, we want to create an excel table with the columns stands for different symbols and rows for different patients. (attention:different cols, different symbols!) When the value = 1, it means the patient did get that symbol and value = 0 means he didn’t.
+
+Steps:
+1.Get an excel of original data. (for example: symbols_data_test.xlsx, it’s some datas of symbols and diagnoses of 39 patients)
+2.Copy and paste the data we need to process to an excel/csv and put it the under the same dict with the script. (for example: copy the black text of symbols_data_test.xlsx to input_test.xlsx)
+3.Run the script label_classify.py / label_classify.ipynb. (If you create a csv file in step 2, then you should not run the first 3 lines.)
+4.Open the output file and paste it to an excel with the contents that we skip in step 1. (for example: copy output_test.csv to result_test.xlsx and paste information in symbols_data_test.xlsx) 
+
+
+使用方法：
+1.整理原始数据，去掉全部为空的行（例：symbols_data_test.xlsx, 它是39个病人的眼睛诊断症状和诊断结果）
+2.将除了表头、姓名、诊断结果以外所有数据（即只是表格中间的元素）重新保存到一个excel／csv中，并与脚本放在同一目录下 （例：复制symbols_data_test.xlsx中黑色字到input_test.xlsx）
+3.修改脚本中文件路径，运行脚本（如果1中保存成了csv格式，则不需要用pandas转换格式）
+4.打开output文件，将2中跳过的数据重新粘贴到结果中（例：复制output_test.csv到result_test.xlsx，并粘贴其他数据。如果excel打开tsv是乱码可先用文本编辑器打开再全选粘贴到excel）
+
+PS: Here I use a semi-auto way to classify the data, you need to do some copy and paste in step 1 and 4, that’s because the format of the original data maybe variable. I think this way is more flexible and can handle the data better.
